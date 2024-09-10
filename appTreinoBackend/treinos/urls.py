@@ -1,6 +1,6 @@
 from django.urls import path
 
-from views import ListarTreinos, EditarTreinos
+from .views.view_treinos import ListarTreinos, EditarTreinos
 
 
 urlpatterns = [
