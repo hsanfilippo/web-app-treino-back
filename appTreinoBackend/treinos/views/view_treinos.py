@@ -11,3 +11,4 @@ class ListarTreinos(generics.ListCreateAPIView):
 
 class EditarTreinos(generics.RetrieveUpdateDestroyAPIView):
     queryset = Treinos.objects.all()
+    serializer_class = SerializerTreinos
