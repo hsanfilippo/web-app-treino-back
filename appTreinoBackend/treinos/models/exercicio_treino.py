@@ -1,8 +1,8 @@
 import uuid
 from django.db import models
 
-from appTreinoBackend.treinos.models.exercicios import Exercicios
-from appTreinoBackend.treinos.models.treinos import Treinos
+from .exercicios import Exercicios
+from .treinos import Treinos
 
 
 class ExercicioInTreino(models.Model):
