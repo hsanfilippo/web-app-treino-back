@@ -1,1 +1,2 @@
 from .serializer_treinos import SerializerTreinos
+from .serializer_exercicios import SerializerExercicios
