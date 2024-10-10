@@ -14,7 +14,8 @@ class Exercicios(models.Model):
     carga = models.IntegerField()
     interv_seg = models.IntegerField()
     tecnica_avanc = models.TextField(null=True)
-    created_on = models.DateTimeField(auto_now_add=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
     treino = models.ForeignKey(Treinos, related_name='exercicios', null=True, on_delete=models.CASCADE)
 
     class Meta:
