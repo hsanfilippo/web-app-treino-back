@@ -9,7 +9,7 @@ class Treinos(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
 
     class Meta:
-        ordering = ['-created_on']
+        ordering = ['-created_at']
 
     def __str__(self):
         return self.nome

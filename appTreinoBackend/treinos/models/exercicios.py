@@ -19,7 +19,7 @@ class Exercicios(models.Model):
     treino = models.ForeignKey(Treinos, related_name='exercicios', null=True, on_delete=models.CASCADE)
 
     class Meta:
-        ordering = ['created_on']
+        ordering = ['created_at']
 
     def __str__(self):
         return self.nome_exerc
