@@ -12,4 +12,5 @@ class ListarExercicios(generics.ListCreateAPIView):
 class EditarExercicios(generics.RetrieveUpdateDestroyAPIView):
     queryset = Exercicios.objects.all()
     serializer_class = SerializerExercicios
+    lookup_field = 'id'
 
