@@ -9,4 +9,4 @@ class SerializerTreinos(serializers.ModelSerializer):
 
     class Meta:
         model = Treinos
-        fields = ['id', 'nome', 'descricao', 'created_on', 'exercicios']
+        fields = '__all__'
