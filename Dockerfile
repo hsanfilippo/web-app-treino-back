@@ -13,6 +13,8 @@ COPY . /app/
 WORKDIR appTreinoBackend/
 
 RUN poetry install --no-dev
+RUN poetry run python manage.py makemigrations
+RUN poetry run python manage.py migrate
 
 EXPOSE 8000
 
